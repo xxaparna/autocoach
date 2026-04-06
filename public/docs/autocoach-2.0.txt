@@ -1,0 +1,97 @@
+📌 AutoCoach 2.0 – Personalized Study & Placement Prep Planner
+
+Goal:
+Build a web app (not React Native) that helps college students stay on track with their academic syllabus and placement preparation. AutoCoach acts as an AI-powered assistant that generates adaptive study plans, tracks progress, and optimizes resumes for placement readiness.
+
+🚀 Core Features
+🎓 Study Planning (Personalized)
+
+Setup & Input
+
+Upload syllabus (CSV/Excel).
+
+Enter exams, quizzes, and assignment dates.
+
+Choose daily study hours and preferences (e.g., focus subjects, weak topics).
+
+AI Study Planner
+
+Weekly study plan automatically generated.
+
+Dynamic rebalancing: if a session is missed, AutoCoach reschedules tasks.
+
+Adaptive revision frequency: more focus on weak subjects based on performance.
+
+Progress Tracking
+
+Visual dashboards (charts & calendars).
+
+Predictive alerts (e.g., “You’re falling behind in Math”).
+
+Productivity streaks and motivation badges.
+
+Motivation & Assistance
+
+Daily motivational quotes.
+
+AI-generated summaries for tough topics.
+
+Push reminders via web notifications + Telegram bot.
+
+💼 Placement Prep (Without Interviews)
+
+ATS Resume Analyzer
+
+Upload resume (PDF/DOCX).
+
+AI scores resume (0–100) based on ATS compliance.
+
+Keyword matching vs. job description (optional input).
+
+Highlight gaps (skills, formatting, weak phrasing).
+
+Resume Builder
+
+Templates optimized for ATS.
+
+Smart suggestions (add action verbs, quantify achievements).
+
+One-click export (PDF/DOCX).
+
+Aptitude & Coding Practice
+
+Aptitude (quantitative, reasoning, verbal) practice sets.
+
+Coding problem sets with real-time feedback.
+
+Test analytics: accuracy, speed, strengths/weaknesses.
+
+📊 Dashboard
+
+Study Calendar with auto-updated plan.
+
+Placement Tracker: resume ATS score, skills coverage.
+
+Progress Reports: study hours logged, syllabus completion %, placement readiness index.
+
+🛠 Tech Stack (Web App)
+
+Frontend: Next.js + TailwindCSS
+
+Backend: FastAPI (Python) or Node.js (Express)
+
+Database: PostgreSQL / Supabase
+
+AI Models:
+
+Study planning → heuristic + reinforcement learning.
+
+Resume ATS analyzer → NLP for keyword extraction.
+
+Integrations:
+
+Telegram Bot API for reminders.
+
+File uploads (syllabus, resume).
+
+Hosting: Vercel (frontend) + Supabase/AWS (backend).

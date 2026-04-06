@@ -1,0 +1,67 @@
+/>
+
+- In components/app-navbar.tsx, remove the "Practice" link from the nav array. Replace the entire nav array with the following (leave the rest of the file unchanged):
+  const nav = [
+    { href: "/dashboard", label: "Dashboard", icon: LayoutGrid },
+    { href: "/planner", label: "Planner", icon: GraduationCap },
+    { href: "/placement", label: "Placement", icon: Target },
+    { href: "/resume-tools/builder", label: "Resume Builder", icon: FileText },
+    { href: "/resume-tools/job-match", label: "Job Match", icon: Brain },
+    { href: "/chat", label: "Doubt Bot", icon: Brain },
+    { href: "/coding", label: "Coding", icon: Code },
+  ]
+
+- In app/page.tsx, remove the "Aptitude Practice" feature card from the features array. Replace the entire features array with the following (leave the rest of the file unchanged):
+  const features: Feature[] = [
+    {
+      title: "ATS Resume Analyzer",
+      desc: "Optimize your resume for ATS with AI-powered scoring and keyword matching.",
+      href: "/placement",
+      icon: FileCheck2,
+      pills: ["ATS Score", "Keyword Match vs JD", "Formatting Suggestions", "Actionable Tips"],
+    },
+    {
+      title: "Resume Builder",
+      desc: "Create professional, ATS-friendly resumes with smart suggestions and live preview.",
+      href: "/resume-tools/builder",
+      icon: FileText,
+      pills: ["Modern Templates", "Smart Suggestions", "Quantify Achievements", "PDF/DOCX Export"],
+    },
+    {
+      title: "Job Match (AI)",
+      desc: "Match your resume to any job description and see strengths, gaps, and improvements.",
+      href: "/resume-tools/job-match",
+      icon: Target,
+      pills: ["Match %", "Matched & Missing Skills", "Tailored Recommendations", "Overall Feedback"],
+    },
+    {
+      title: "Study Planner",
+      desc: "Upload syllabus and get adaptive weekly plans with automatic rescheduling.",
+      href: "/planner",
+      icon: CalendarDays,
+      pills: ["CSV/XLSX Import", "Adaptive Plan", "Missed-session Rebalance", "Progress Dashboard"],
+    },
+    {
+      title: "Coding Practice",
+      desc: "Solve coding problems with an in-browser runner and instant test feedback.",
+      href: "/coding",
+      icon: TerminalSquare,
+      pills: ["Editor + Tests", "QOTD", "Tags & Difficulty", "Mark Solved"],
+    },
+    {
+      title: "Personalised Doubt Bot",
+      desc: "Get tailored explanations using your focus subjects and weak topics.",
+      href: "/chat",
+      icon: MessageSquare,
+      pills: ["Context-aware Answers", "Topic Summaries", "Code Help", "Exam Tips"],
+    },
+    {
+      title: "Reminders & Streaks",
+      desc: "Stay on track with web notifications and Telegram reminders.",
+      href: "/planner",
+      icon: Bot,
+      pills: ["Web Notifications", "Telegram Bot (API)", "Predictive Alerts", "Motivation Badges"],
+    },
+  ]
+
+</CodeProject>
