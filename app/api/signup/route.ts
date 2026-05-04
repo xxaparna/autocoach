@@ -2,6 +2,7 @@ import { NextResponse } from "next/server"
 import { connectDB } from "@/lib/db"
 import { User } from "@/models/User"
 import bcrypt from "bcryptjs"
+import { setSession } from "@/lib/session"
 
 export async function POST(req: Request) {
   try {
@@ -21,6 +22,9 @@ export async function POST(req: Request) {
 
     const hashed = await bcrypt.hash(password, 10)
     const user = await User.create({ name, email, password: hashed })
+
+    // Set session cookie so user is logged in immediately after signup
+    await setSession({ uid: String(user._id), email: user.email })
 
     return NextResponse.json({ ok: true, user: { id: user._id, email: user.email, name: user.name } }, { status: 201 })
   } catch (err) {
