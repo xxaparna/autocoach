@@ -18,7 +18,7 @@ export function PersonalInfoForm() {
             id="fullName"
             value={personalInfo.fullName}
             onChange={(e) => updatePersonalInfo({ fullName: e.target.value })}
-            placeholder="John Doe"
+            placeholder="Your full name"
           />
         </div>
         <div>
@@ -28,7 +28,7 @@ export function PersonalInfoForm() {
             type="email"
             value={personalInfo.email}
             onChange={(e) => updatePersonalInfo({ email: e.target.value })}
-            placeholder="john@example.com"
+            placeholder="xyz@example.com"
           />
         </div>
       </div>
@@ -40,7 +40,7 @@ export function PersonalInfoForm() {
             id="phone"
             value={personalInfo.phone}
             onChange={(e) => updatePersonalInfo({ phone: e.target.value })}
-            placeholder="(555) 123-4567"
+            placeholder="(123) 123-4567"
           />
         </div>
         <div>
@@ -49,7 +49,7 @@ export function PersonalInfoForm() {
             id="location"
             value={personalInfo.location}
             onChange={(e) => updatePersonalInfo({ location: e.target.value })}
-            placeholder="New York, NY"
+            placeholder="City, State"
           />
         </div>
       </div>
@@ -60,7 +60,7 @@ export function PersonalInfoForm() {
           id="website"
           value={personalInfo.website}
           onChange={(e) => updatePersonalInfo({ website: e.target.value })}
-          placeholder="linkedin.com/in/johndoe"
+          placeholder="linkedin.com/in/yourprofile"
         />
       </div>
 

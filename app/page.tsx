@@ -175,13 +175,13 @@ export default function HomePage() {
             </Link>
           </motion.div>
 
-          {/* Animated Stats */}
+          {/* Animated Stats
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full mb-12">
             <StatCard label="Active Users" value="10K+" icon={Users} />
             <StatCard label="Resumes Built" value="50K+" icon={FileText} />
             <StatCard label="Job Matches" value="100K+" icon={Target} />
             <StatCard label="Success Rate" value="94%" icon={TrendingUp} />
-          </div>
+          </div> */}
 
           
         </motion.section>
@@ -219,20 +219,20 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6">
             <TestimonialCard
               quote="AutoCoach helped me land my dream job. The job matching feature identified gaps I didn't know I had."
-              author="Sarah Chen"
-              role="Software Engineer"
+              author="Ridhima"
+              role="CSE undergrad"
               avatar="SC"
             />
             <TestimonialCard
               quote="The study planner adapted perfectly to my schedule. I completed my preparation 2 weeks early!"
-              author="Raj Patel"
-              role="Recent Graduate"
+              author="Anish"
+              role="Web developer intern"
               avatar="RP"
             />
             <TestimonialCard
               quote="The ATS analyzer improved my resume visibility by 40%. Highly recommended!"
-              author="Emma Wilson"
-              role="Product Manager"
+              author="Kaira"
+              role="Student"
               avatar="EW"
             />
           </div>
